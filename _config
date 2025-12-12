@@ -5,6 +5,5 @@ plugins:
 title: League of Legends Game Analysis
 description: Data analysis and predictions for League of Legends matches
 
-# GitHub Pages settings
 baseurl: "/League_of_Legends_Game_Analysis"
 url: "https://seagull-angle.github.io"
