@@ -71,19 +71,6 @@ The resulting `cleaned_df` contains 25,098 team-level game records with 50 colum
 - 24.9% of games exceed Q3 (long games)
 - 1.6% are statistical outliers (extremely long)
 - Distribution appears roughly normal with slight right skew
-
-**Total Gold Distribution:**
-- Shows expected right skew (longer games = more gold)
-- Helps understand economic patterns across matches
-
-### Bivariate Analysis
-
-**Win Rate vs. Game Length for Popular Teams:**
-
-Key trends observed:
-- **Most teams perform worse in long games**: T1 (74% → 61%), Royal Never Give Up (66% → 60%), Evil Geniuses (61% → 55%)
-- **DRX is an exception**: 64% long game win rate vs 55% overall
-- **Saigon Buffalo shows largest decline**: 53% overall → 33% long games
 <iframe
   src="{{ site.baseurl }}/assets/Univariate_Analysis_fig_1.html"
   width="650"
@@ -97,13 +84,10 @@ Key trends observed:
   height="500"
   frameborder="0"
 ></iframe>
-**Gold at 20 Minutes vs. Game Result:**
 
-- Clear separation between winners and losers in mean gold
-- Overlapping distributions indicate comebacks are possible
-- Winning teams show tighter clustering (more consistent)
-- Validates gold at 20 minutes as a useful predictive feature
-
+**Total Gold Distribution:**
+- Shows expected right skew (longer games = more gold)
+- Helps understand economic patterns across matches
 <iframe
   src="{{ site.baseurl }}/assets/Univariate_Analysis_fig_3.html"
   width="650"
@@ -117,6 +101,41 @@ Key trends observed:
   height="500"
   frameborder="0"
 ></iframe>
+
+### Bivariate Analysis
+
+**Win Rate vs. Game Length for Popular Teams:**
+
+Key trends observed:
+- **Most teams perform worse in long games**: T1 (74% → 61%), Royal Never Give Up (66% → 60%), Evil Geniuses (61% → 55%)
+- **DRX is an exception**: 64% long game win rate vs 55% overall
+- **Saigon Buffalo shows largest decline**: 53% overall → 33% long games
+
+<iframe
+  src="{{ site.baseurl }}/assets/Bivariate_Analysis_fig_1.html.html"
+  width="650"
+  height="500"
+  frameborder="0"
+></iframe>
+**Gold at 20 Minutes vs. Game Result:**
+
+- Clear separation between winners and losers in mean gold
+- Overlapping distributions indicate comebacks are possible
+- Winning teams show tighter clustering (more consistent)
+- Validates gold at 20 minutes as a useful predictive feature
+<iframe
+  src="{{ site.baseurl }}/assets/Bivariate_Analysis_fig_2.html.html"
+  width="650"
+  height="500"
+  frameborder="0"
+></iframe>
+<iframe
+  src="{{ site.baseurl }}/assets/Bivariate_Analysis_fig_3.html.html"
+  width="650"
+  height="500"
+  frameborder="0"
+></iframe>
+
 ### Interesting Aggregates
 
 We calculate average statistics at 20 minutes grouped by game result, revealing:
