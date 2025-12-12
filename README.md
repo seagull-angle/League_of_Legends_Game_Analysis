@@ -93,8 +93,8 @@ Key trends observed:
 
 <iframe
   src="{{ site.baseurl }}/assets/Univariate_Analysis_fig_2.html"
-  width="800"
-  height="600"
+  width="650"
+  height="500"
   frameborder="0"
 ></iframe>
 **Gold at 20 Minutes vs. Game Result:**
@@ -106,15 +106,15 @@ Key trends observed:
 
 <iframe
   src="{{ site.baseurl }}/assets/Univariate_Analysis_fig_3.html"
-  width="800"
-  height="600"
+  width="650"
+  height="500"
   frameborder="0"
 ></iframe>
 
 <iframe
   src="{{ site.baseurl }}/assets/Univariate_Analysis_fig_4.html"
-  width="800"
-  height="600"
+  width="650"
+  height="500"
   frameborder="0"
 ></iframe>
 ### Interesting Aggregates
@@ -144,8 +144,8 @@ The **`url`** column (VOD links) has **84.52%** missing values. We believe this 
 - **Conclusion:** URL missingness **strongly depends on league** (p < 0.05). Different leagues have vastly different broadcasting infrastructure and archival policies.
 <iframe
   src="{{ site.baseurl }}/assets/Missingness_fig_1.html"
-  width="800"
-  height="600"
+  width="650"
+  height="500"
   frameborder="0"
 ></iframe>
 
@@ -155,6 +155,12 @@ The **`url`** column (VOD links) has **84.52%** missing values. We believe this 
 - Observed TVD: **~0.0000**
 - P-value: **~1.0000**
 - **Conclusion:** URL missingness **does not depend on result** (p ≥ 0.05). Every match has exactly one winner and one loser, so result distribution is always 50/50 regardless of URL missingness.
+<iframe
+  src="{{ site.baseurl }}/assets/Missingness_fig_2.html"
+  width="650"
+  height="500"
+  frameborder="0"
+></iframe>
 
 ### Summary
 
@@ -182,7 +188,12 @@ URL missingness is **NMAR with MAR properties conditional on league**. Our predi
 - Long game win rate: 70.0% | Overall: 65.3%
 
 **Conclusion:** We **fail to reject H₀** (p = 0.42 > 0.05). The 4.7% difference is **not statistically significant** and could easily occur by random chance.
-
+<iframe
+  src="{{ site.baseurl }}/assets/hp_test_fig_1.html"
+  width="650"
+  height="500"
+  frameborder="0"
+></iframe>
 ---
 
 ### Hypothesis Test 2: Are Team Deaths a Key Factor in Long Games?
@@ -203,7 +214,12 @@ URL missingness is **NMAR with MAR properties conditional on league**. Our predi
 - Losing teams: 19.823 deaths | Winning teams: 13.365 deaths
 
 **Conclusion:** We **reject H₀** (p ≈ 0.00). Team deaths are **highly statistically significant** in long games. Losing teams average 6.5 more deaths, validating deaths as a critical predictive feature.
-
+<iframe
+  src="{{ site.baseurl }}/assets/hp_test_fig_2.html"
+  width="650"
+  height="500"
+  frameborder="0"
+></iframe>
 ---
 
 ## Framing a Prediction Problem
@@ -266,7 +282,12 @@ Using all four metrics gives a complete picture, as a model can have decent accu
 - Limited 2-feature set ignores early-game and other statistics
 
 **Overall:** Moderately adequate but not satisfactory. The model exploits class imbalance rather than learning balanced decision boundaries.
-
+<iframe
+  src="{{ site.baseurl }}/assets/baseline_matrix_fig_1.html"
+  width="650"
+  height="500"
+  frameborder="0"
+></iframe>
 ---
 
 ## Final Model
@@ -313,7 +334,12 @@ Using all four metrics gives a complete picture, as a model can have decent accu
 **Why it's better:** Demonstrates better learning behavior with improved CV scores and more balanced predictions, even though test accuracy is similar. Provides better foundation for future improvements.
 
 ### Confusion Matrix
-
+<iframe
+  src="{{ site.baseurl }}/assets/baseline_matrix_fig_2.html"
+  width="650"
+  height="500"
+  frameborder="0"
+></iframe>
 The final model's confusion matrix for T1 shows:
 - True Negatives: 3 | False Positives: 7
 - False Negatives: 2 | True Positives: 24
