@@ -86,8 +86,8 @@ The resulting `cleaned_df` contains 25,098 team-level game records with 50 colum
 ></iframe>
 
 **Total Gold Distribution:**
-- Shows expected right skew (longer games = more gold)
-- Helps understand economic patterns across matches
+- Shows expected Normal
+- Helps understand economic patterns mean and distribution of all games
 <iframe
   src="{{ site.baseurl }}/assets/Univariate_Analysis_fig_3.html"
   width="650"
