@@ -85,7 +85,7 @@ Key trends observed:
 - **DRX is an exception**: 64% long game win rate vs 55% overall
 - **Saigon Buffalo shows largest decline**: 53% overall → 33% long games
 <iframe
-  src="Univariate Analysis fig 1.html"
+  src="Univariate_Analysis_fig_1.html"
   width="800"
   height="600"
   frameborder="0"
