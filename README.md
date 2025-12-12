@@ -84,6 +84,12 @@ Key trends observed:
 - **Most teams perform worse in long games**: T1 (74% → 61%), Royal Never Give Up (66% → 60%), Evil Geniuses (61% → 55%)
 - **DRX is an exception**: 64% long game win rate vs 55% overall
 - **Saigon Buffalo shows largest decline**: 53% overall → 33% long games
+<iframe
+  src="Univariate Analysis fig 1.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 **Gold at 20 Minutes vs. Game Result:**
 
