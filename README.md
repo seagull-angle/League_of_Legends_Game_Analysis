@@ -109,7 +109,7 @@ The resulting `cleaned_df` contains 25,098 team-level game records with 50 colum
 Key trends observed:
 - **Most teams perform worse in long games**: T1 (74% → 61%), Royal Never Give Up (66% → 60%), Evil Geniuses (61% → 55%)
 - **DRX is an exception**: 64% long game win rate vs 55% overall
-- **Saigon Buffalo shows largest decline**: 53% overall → 33% long games
+- **Most teams have a higher mean win rate(compared to long game**
 
 <iframe
   src="{{ site.baseurl }}/assets/Bivariate_Analysis_fig_1.html"
@@ -171,8 +171,8 @@ The **`url`** column (VOD links) has **84.52%** missing values. We believe this 
 **Test 2: URL Missingness vs. Game Result (DOES NOT DEPEND)**
 
 - Test Statistic: Total Variation Distance (TVD)
-- Observed TVD: **~0.0000**
-- P-value: **~1.0000**
+- Observed TVD: **0.0000**
+- P-value: **1.0000**
 - **Conclusion:** URL missingness **does not depend on result** (p ≥ 0.05). Every match has exactly one winner and one loser, so result distribution is always 50/50 regardless of URL missingness.
 <iframe
   src="{{ site.baseurl }}/assets/Missingness_fig_2.html"
@@ -346,13 +346,6 @@ Using all four metrics gives a complete picture, as a model can have decent accu
 
 **Why it's better:** Demonstrates better learning behavior with improved CV scores and more balanced predictions, even though test accuracy is similar. Provides better foundation for future improvements.
 
-### Confusion Matrix
-<iframe
-  src="{{ site.baseurl }}/assets/final_matrix_fig_1.html"
-  width="650"
-  height="500"
-  frameborder="0"
-></iframe>
 The final model's confusion matrix for T1 shows:
 - True Negatives: 3 | False Positives: 7
 - False Negatives: 2 | True Positives: 24
