@@ -64,7 +64,7 @@ Our cleaning process involves several key steps:
    - Fill missing `increased_*` columns with 0 (indicating games ended before that time point)
 
 The resulting `cleaned_df` contains 25,098 team-level game records with 50 columns.
- <img src="{{ site.baseurl }}assets/df.head.png" alt="Description" width="650">
+ <img src="{{ site.baseurl }}/assets/df.head.png" alt="Description" width="650">
 ### Univariate Analysis
 
 **Game Length Distribution:**
