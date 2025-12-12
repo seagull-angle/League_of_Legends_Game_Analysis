@@ -354,44 +354,6 @@ We **fail to reject H₀** (p = 0.45 > 0.05). Although the model appears to perf
 
 ---
 
-## Conclusion
 
-This project analyzed 2022 professional League of Legends matches to understand how game length affects team performance and to predict match outcomes.
-
-**Key Findings:**
-
-1. **Team-specific patterns exist but are often not statistically significant** - While most elite teams perform worse in long games, hypothesis testing shows these differences are often within random chance range.
-
-2. **Team deaths are critical in long games** - Highly significant (p ≈ 0.000), with losing teams averaging 6.5 more deaths.
-
-3. **Prediction is challenging** - Models achieve ~75% accuracy but struggle with detecting losses (recall ≈ 30%), suggesting professional outcomes depend on factors beyond basic statistics.
-
-4. **Models are fair across game lengths** - No significant bias between short and long games (p = 0.45).
-
-5. **Data quality varies by league** - URL missingness strongly depends on league (TVD = 0.97), requiring careful consideration in cross-league analyses.
-
-**Implications:**
-
-For teams and coaches, game length patterns should be interpreted cautiously - observed differences may not reflect true strategic advantages. The significance of team deaths in long games validates minimizing mistakes in extended matches.
-
-For data scientists, this demonstrates both the potential and limitations of traditional ML approaches. Low recall for losses suggests capturing professional match outcomes may require more sophisticated feature engineering or ensemble methods.
-
----
-
-## Repository Files
-
-- `template.ipynb` - Main analysis notebook
-- `2022_LoL_esports_match_data_from_OraclesElixir.csv` - Dataset
-- `PROJECT_REPORT.md` - This report
-
----
-
-## Author
-
-**Albert Zhang**
-Website: [League of Legends Game Analysis](https://seagull-angle.github.io/League_of_Legends_Game_Analysis/)
-
-Project completed as part of DSC 80 at UC San Diego
-Data sourced from Oracle's Elixir
 
 
