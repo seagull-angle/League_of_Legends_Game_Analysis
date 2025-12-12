@@ -161,12 +161,7 @@ The **`url`** column (VOD links) has **84.52%** missing values. We believe this 
   height="500"
   frameborder="0"
 ></iframe>
-<iframe
-  src="{{ site.baseurl }}/assets/Missingness_fig_3.html"
-  width="650"
-  height="500"
-  frameborder="0"
-></iframe>
+
 ### Summary
 
 URL missingness is **NMAR with MAR properties conditional on league**. Our prediction models use in-game statistics rather than URLs, so this missingness doesn't directly affect our core analysis.
