@@ -112,7 +112,7 @@ Key trends observed:
 - **Saigon Buffalo shows largest decline**: 53% overall → 33% long games
 
 <iframe
-  src="{{ site.baseurl }}/assets/Bivariate_Analysis_fig_1.html.html"
+  src="{{ site.baseurl }}/assets/Bivariate_Analysis_fig_1.html"
   width="650"
   height="500"
   frameborder="0"
@@ -124,13 +124,13 @@ Key trends observed:
 - Winning teams show tighter clustering (more consistent)
 - Validates gold at 20 minutes as a useful predictive feature
 <iframe
-  src="{{ site.baseurl }}/assets/Bivariate_Analysis_fig_2.html.html"
+  src="{{ site.baseurl }}/assets/Bivariate_Analysis_fig_2.html"
   width="650"
   height="500"
   frameborder="0"
 ></iframe>
 <iframe
-  src="{{ site.baseurl }}/assets/Bivariate_Analysis_fig_3.html.html"
+  src="{{ site.baseurl }}/assets/Bivariate_Analysis_fig_3.html"
   width="650"
   height="500"
   frameborder="0"
