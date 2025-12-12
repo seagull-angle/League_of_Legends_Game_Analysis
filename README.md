@@ -86,11 +86,17 @@ Key trends observed:
 - **Saigon Buffalo shows largest decline**: 53% overall → 33% long games
 <iframe
   src="{{ site.baseurl }}/assets/Univariate_Analysis_fig_1.html"
+  width="650"
+  height="500"
+  frameborder="0"
+></iframe>
+
+<iframe
+  src="{{ site.baseurl }}/assets/Univariate_Analysis_fig_2.html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
-
 **Gold at 20 Minutes vs. Game Result:**
 
 - Clear separation between winners and losers in mean gold
@@ -98,6 +104,19 @@ Key trends observed:
 - Winning teams show tighter clustering (more consistent)
 - Validates gold at 20 minutes as a useful predictive feature
 
+<iframe
+  src="{{ site.baseurl }}/assets/Univariate_Analysis_fig_3.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+<iframe
+  src="{{ site.baseurl }}/assets/Univariate_Analysis_fig_4.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 ### Interesting Aggregates
 
 We calculate average statistics at 20 minutes grouped by game result, revealing:
@@ -123,6 +142,12 @@ The **`url`** column (VOD links) has **84.52%** missing values. We believe this 
 - Observed TVD: **0.9702**
 - P-value: **0.0000**
 - **Conclusion:** URL missingness **strongly depends on league** (p < 0.05). Different leagues have vastly different broadcasting infrastructure and archival policies.
+<iframe
+  src="{{ site.baseurl }}/assets/Missingness_fig_1.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 **Test 2: URL Missingness vs. Game Result (DOES NOT DEPEND)**
 
