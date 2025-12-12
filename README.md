@@ -287,12 +287,6 @@ Using all four metrics gives a complete picture, as a model can have decent accu
 - Limited 2-feature set ignores early-game and other statistics
 
 **Overall:** Moderately adequate but not satisfactory. The model exploits class imbalance rather than learning balanced decision boundaries.
-<iframe
-  src="{{ site.baseurl }}/assets/baseline_matrix_fig_1.html"
-  width="650"
-  height="500"
-  frameborder="0"
-></iframe>
 ---
 
 ## Final Model
@@ -340,7 +334,7 @@ Using all four metrics gives a complete picture, as a model can have decent accu
 
 ### Confusion Matrix
 <iframe
-  src="{{ site.baseurl }}/assets/baseline_matrix_fig_2.html"
+  src="{{ site.baseurl }}/assets/final_matrix_fig_1.html"
   width="650"
   height="500"
   frameborder="0"
